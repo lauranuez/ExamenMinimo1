@@ -1,30 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PersonaUpdateComponent } from './components/persona-update/persona-update.component';
 
-import { SubjectListComponent } from './components/subject-list/subject-list.component';
-import { SubjectPreviewComponent } from './components/subject-preview/subject-preview.component';
-import { StudentPreviewComponent } from './components/student-preview/student-preview.component';
-
-import { StudentFormComponent } from './components/student-form/student-form.component';
+import { PersonasListComponent } from './components/personas-list/personas-list.component';
+import { SeguimientoFormComponent } from './components/seguimiento-form/seguimiento-form.component';
 
 const routes: Routes = [
   {
-    path: 'subjects',
-    component: SubjectListComponent
+    path: 'persona',
+    component: PersonasListComponent
   },
   {
-    path: 'subjects/:id',
-    component: SubjectPreviewComponent
+    path: 'persona/:id',
+    component: PersonaUpdateComponent
   },
   {
-    path: 'students/:id',
-    component: StudentPreviewComponent
+    path: 'seguimiento/:id',
+    component: SeguimientoFormComponent
   },
   {
-    path: 'students/addAlumno/:id',
-    component:StudentFormComponent
+    path: '',
+    redirectTo: '/persona',
+    pathMatch: 'full'
   }
-
 ];
 
 @NgModule({

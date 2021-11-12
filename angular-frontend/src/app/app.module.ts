@@ -9,6 +9,9 @@ import { SubjectListComponent } from './components/subject-list/subject-list.com
 import { SubjectPreviewComponent } from './components/subject-preview/subject-preview.component';
 import { StudentPreviewComponent } from './components/student-preview/student-preview.component';
 import { StudentFormComponent } from './components/student-form/student-form.component';
+import { PersonasListComponent } from './components/personas-list/personas-list.component';
+import { PersonaUpdateComponent } from './components/persona-update/persona-update.component';
+import { SeguimientoFormComponent } from './components/seguimiento-form/seguimiento-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { StudentFormComponent } from './components/student-form/student-form.com
     SubjectListComponent,
     SubjectPreviewComponent,
     StudentPreviewComponent,
-    StudentFormComponent
+    StudentFormComponent,
+    PersonasListComponent,
+    PersonaUpdateComponent,
+    SeguimientoFormComponent
   ],
   imports: [
     BrowserModule,
